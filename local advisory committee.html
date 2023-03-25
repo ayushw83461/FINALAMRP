@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+          @keyframes fadeout {
+              from {
+                  opacity: 0;
+              }
+
+              to {
+                  opacity: 1;
+              }
+          }
+
+          /* @keyframes colorchange {
+            0% { background-color: rgb(251, 105, 0); }
+            50% { background-color: rgb(255, 255, 255); }
+            100% { background-color: rgb(6, 78, 19); }
+          }*/
+          /* Style for the popup */
+          .popup {
+              display: none;
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              border-radius: 25px;
+              background-color: #F5F5F5;
+              padding: 20px;
+              border: 1px solid white;
+              z-index: 9999;
+              color: black;
+          }
+
+          /* Style for the overlay */
+          .overlay {
+              display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.5);
+              z-index: 9998;
+          }
+
+          button {
+              background-color: blue;
+              color: white;
+              border: none;
+              padding: 10px 20px;
+              font-size: 16px;
+              cursor: pointer;
+          }
+
+          .Log_icon {
+              color: white;
+          }
+
+          /* Style for the button when hovered
+        button:hover {
+          background-color: lightblue;
+        }*/
+          .margin_auto {
+              margin: auto;
+          }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Medcity - Medical Healthcare HTML5 Template">
+    <link href="assets/images/favicon/favicon.png" rel="icon">
+    <title>Medcity - Medical Healthcare HTML5 Template</title>
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="assets/css/libraries.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <head>
+
+        <link href="assets/images/favicon/favicon.png" rel="icon">
+        <title>Advanced Materials and Raditaion Physics</title>
+
+    </head>
+    <header style="background-color: #283b6a; display: flex; font-family: sans-serif; text-transform: capitalize;
+    font-weight: 700;
+    line-height: 1.3;
+	">
+        <div style="padding: 30px;">
+            <img src="assets/images/head/amrp.png" alt="Left Logo" style="height: 110px; animation: fadeout 4s;">
+        </div>
+
+        <div style="text-align:center !important; margin: auto;">
+            <h2 style="margin: 0;color: White;  font-family: Times New Roman, Times, serif; font-size: 30px; margin-top:40px;margin-bottom: auto;">6<sup>th</sup> National Conference on Advanced Materials and Radiation Physics<br>May 18-19, 2023</h2><br><br>
+            <h3 style="margin: 0;color: White; font-family: Times New Roman, Times, serif;font-size: 20px;margin-top:auto;margin-bottom:auto;">Department of Physics, Sant Longowal Institute of Engineering and Technology, Sangrur (Punjab)</h3>
+        </div>
+
+        <div style="padding: 30px;">
+            <img src="assets/images/head/sliet.png" alt="Right Logo" style="height: 110px; animation: fadeout 4s;">
+        </div>
+    </header>
+
+    <body>
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+            <meta name="description" content="Medcity - Medical Healthcare HTML5 Template">
+            
+
+            <link rel="stylesheet"
+                  href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+            <link rel="stylesheet" href="assets/css/libraries.css">
+            <link rel="stylesheet" href="assets/css/style.css">
+        </head>
+
+        <body>
+            <div class="wrapper">
+                <div class="preloader">
+                    <div class="loading"><span></span><span></span><span></span><span></span></div>
+                </div><!-- /.preloader -->
+                <!-- =========================
+        Header
+    =========================== -->
+                <header class="header header-layout1">
+                    <div class="header-topbar">
+                        <div class="container-fluid">
+                            <div class="row align-items-center">
+                                <div class="col-12">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <ul class="contact__list d-flex flex-wrap align-items-center list-unstyled mb-0">
+                                            <li>
+                                                <button class="miniPopup-emergency-trigger" type="button">6th National Conference</button>
+                                                <!-- /.miniPopup-emergency -->
+                                            </li>
+                                            <li>
+                                                <i class="icon-phone"></i><a href="tel:+5565454117">To contact us: +91 6239793053</a>
+                                            </li>
+                                            <li>
+                                                <i class="icon-location"></i><a href="#">Location: SLIET Longowal</a>
+                                            </li>
+                                            <li>
+                                                <i class="icon-clock"></i><a href="contact-us.html">Mon - Fri: 8:00 am - 7:00 pm</a>
+                                            </li>
+                                        </ul><!-- /.contact__list -->
+                                        <div class="d-flex">
+                                            <ul class="social-icons list-unstyled mb-0 mr-30">
+                                                <li><a href="https://chat.whatsapp.com/F63LhBLPUdjIKYhgyeffbB"><i class="fab fa-whatsapp"></i>Join our whatsapp group</a></li>
+
+                                            </ul><!-- /.social-icons -->
+                                            <form class="header-topbar__search">
+                                                <input type="text" class="form-control" placeholder="Search...">
+                                                <button class="header-topbar__search-btn"><i class="fa fa-search"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div><!-- /.col-12 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </div><!-- /.header-top -->
+
+                    <nav class="navbar navbar-expand-lg sticky-navbar">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo">
+                                <img src="assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
+                            </a>
+                            <button class="navbar-toggler" type="button">
+                                <span class="menu-lines"><span></span></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="mainNavigation">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav__item has-dropdown">
+                                        <a href="Index.html" class=" nav__item-link ">Home</a>
+                                        <!-- /.dropdown-menu -->
+                                    </li>
+                                    <li class="nav__item has-dropdown">
+                                        <a href="cop.html" class=" nav__item-link ">Call for Papers</a>
+                                        <!-- /.dropdown-menu -->
+                                    </li>
+                                    <li class="nav__item has-dropdown">
+                                        <a href="auth.html" class=" nav__item-link">Author Guidelines</a>
+                                        <!-- /.dropdown-menu -->
+                                    </li><!-- /.nav-item -->
+                                    <li class="nav__item has-dropdown">
+                                        <a href="registration.html" class="nav__item-link">Registration</a>
+                                        <!-- /.dropdown-menu -->
+                                    </li><!-- /.nav-item -->
+                                    <li class="nav__item has-dropdown">
+                                        <a href="publication.html" class=" nav__item-link">Publication</a>
+                                        <!-- /.dropdown-menu -->
+                                    </li><!-- /.nav-item -->
+                                    <li class="nav__item has-dropdown">
+                                        <a href="#" data-toggle="dropdown" class=" nav__item-link active">Speaker/Committee</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav__item">
+                                                <a href="organizing committee.html" class="nav__item-link">Organizing Committee</a>
+                                            </li><!-- /.nav-item -->
+                                            <li class="nav__item">
+                                                <a href="local advisory committee.html" class="nav__item-link">Local Advisory Committee</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a href="national advisory committee.html" class="nav__item-link">National Advisory Committee</a>
+                                            </li><!-- /.nav-item -->
+                                        </ul><!-- /.dropdown-menu -->
+                                    </li><!-- /.nav-item -->
+                                    <li class="nav__item">
+                                        <a href="aap.html" class=" nav__item-link">Accepted Abstract</a>
+                                        <!-- /.dropdown-menu -->
+                                    </li><!-- /.nav-item -->
+                                    <li class="nav__item">
+                                        <a href="userlogged.html" class="nav__item-link">User Section</a>
+                                    </li><!-- /.nav-item -->
+                                </ul><!-- /.navbar-nav -->
+                                <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
+                            </div><!-- /.navbar-collapse -->
+                            <div class="d-none d-xl-flex align-items-center position-relative ml-30">
+                                <div class="miniPopup-departments-trigger">
+                                    <span class="menu-lines" id="miniPopup-departments-trigger-icon"><span></span></span>
+
+                                </div>
+                                <!-- /.miniPopup-departments -->
+
+                            </div>
+                        </div><!-- /.container -->
+                    </nav><!-- /.navabr -->
+                </header><!-- /.Header -->
+                <!-- ========================
+       page title
+    =========================== -->
+                <section class="page-title ">
+                    <div class="bg-img"><img src="assets/images/page-titles/7.jpg" alt="background"></div>
+                    <div class="container">
+                        <div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
+                                <h1 class="pagetitle__heading"><strong style="color:#ff0000">Local </strong><strong>Advisory Committee</strong></h1>
+
+                            </div><!-- /.col-xl-5 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container -->
+                </section><!-- /.page-title -->
+                <!-- ========================
+        Local Advisory Committee layout 2
+    ========================== -->
+                <section class="team-layout2 pb-40">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Member #1 -->
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="member">
+                                    <div class="member__img">
+                                        <img src="lac_img/1.jpeg" alt="member img" width="370" height="380">
+                                    </div><!-- /.member-img -->
+                                    <div class="member__info">
+                                        <h5 class="member__name"><a href="#">Prof. A.S. Arora,</a></h5>
+                                        <p class="member__job">Dean (FSW)</p>
+
+                                    </div><!-- /.member-info -->
+                                </div><!-- /.member -->
+                            </div><!-- /.col-lg-4 -->
+                            <!-- Member #2 -->
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="member">
+                                    <div class="member__img">
+                                        <img src="http://sliet.ac.in/wp-content/uploads/avatars/107/632d45e97bcc5-bpfull.jpg" width="370" height="380" width="370" height="380" alt="member img">
+                                    </div><!-- /.member-img -->
+                                    <div class="member__info">
+                                        <h5 class="member__name"><a href="#">Prof. Rajesh Kumar,</a></h5>
+                                        <p class="member__job">Dean(SW)</p>
+
+
+                                    </div><!-- /.member-info -->
+                                </div><!-- /.member -->
+                            </div><!-- /.col-lg-4 -->
+                            <!-- Member #3 -->
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="member">
+                                    <div class="member__img">
+                                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCAkSEAoJCQkIDAoJCAwICAcICBEJCgkMJSEZJyUhJCQpIC4lKSwrHyQkJjg4MC8xNTU1KCQ7QDszPzU0NTEBDAwMDw8PEBAQEDEdJB0xMTExMTExPzExMTExMTExMTExMT8xMTExMTExMTExMTExMTExMTExMTExMTExMTExMf/AABEIAOgAswMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIDBQYEBwj/xABDEAACAQMBBAcDCgUCBQUAAAABAgADBBESBSEiMQYTMkFCUWFScYEHFCNicpGhwdHwgpKiseEVM1Oy0uLxJENUY8L/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAJREBAQACAgIBBAIDAAAAAAAAAAECEQMxIUESBBMiUUJhBRUy/9oADAMBAAIRAxEAPwDzyLEgPfMHv7OixmY7MBs4RQfSMB84/PKBwoi5iDEdiCoSAEXBhkeYzAbggIsAsBuE9IsCPvhiBkhiLj74YgDSIYjsQxAGQxHAQgRpEMRfWGIFo3fCOx6wgWkEImYZgjYHrF90TMAYDZwjxGA+UUt3kwPfs8sBljuA8UhWq7Z6sYTss5aQ1XZjyOgdlfak2DimMYAX+FY9eHHy/UZW/HHo9nRcK7anK97flGl6QDF9evTqVR4VkTYD1Hcahr06ffI2dDnzLcWZUxct5LU5qZAKPkdni8PrHo4xqAcsU7StOZF3g5yC2llkzB10neV1MrMvhzyMLNJxzyv8nQz4YpvwPF7UXXv4hgadWrVOercYIqLjUeFl9lv2IJV6xiEADFtX2m8opNtsefPG9uvdAmN4lUFhxjhZGaOUgjUOUnT0OLmx5J47IB3xceseCPjGGDcmIhiwIgCEeUTfHYiQIYhDPpCBOQwgfSJkxsdnfGGY05iZgW0gMjrVNwUd8QvIqpzgBck9lYM+TKzG6OLjAGMkN7U6qakjCj7Lae1OBEculNdzs2ng8M1Oz9lEgL3BeJmhllMe3DjjllapjbVDudMjTpVlkD2TjODvK8StNxbbGGDyA1dpfDJf9BzuFL+J2kfdkafat7YOjYV2IRVzxalltQ2PdPpR6ZJK8TBZsbbYSIcqMn2tMvLeyRFChN4XtScuXfR48Ujy2+2NWVWwj5LcPDKdQ9NuIYcT2W6sUYHKAn6yzE9I9gjS9ZFwU8OmGHL51kWfF43Gat7g1NS1MsS3A06V4SE6sqH1Nq09mVtqlQOMIAQ3dLK57VPSxVtXEreKb5J4MrjnKeYYimJiQ9kkDFxCAN+ECOccIQBuIR3whAtOEwgfSEpzGmMYyQyJoJy8GlvWPoEagzDl2ZCTGux4ce1Hphnl+NXOwrfXVqVmGRTbQn2pv9mW6BQSoJMyfR6kAi+bLqb7Rm0sBuA8py8mW8jwmsYsaFuu4kATsSinhH8Uht23gcxOxAN0iQFSguDuGqSGmuB5xV7yDB23Dfky7JDjlrIOcqrugriouAQV0sstazHfunGqbix9qZXs/TyTalitO4dMEDXwrEuSSaQwmkMun6su+ldH/wBQQhAJXVv8Uz1Zd6EEahU4mWduN3jK5uuR14ij0hCJ7M6BMTEXEDAyYgRFxyMIDRMQi/CECcBiR0bKcxDInkxkTiCMohMHBxu7m1RfOPQZ4QN54Vgwyx3LGx2PTGKZ5DQupprLNU3KpxMZb2lzUZKVOoadOmq8vE0tv9I2qAD85V1HZVajLpmFwlu7RcrPEja0KWAN86tJAAB3zMWN7dUxTS4OCG0szS+Su7KSmc6eFotSDy6ldACHcL9qPV6ZGpXVl09pWmbvhXYMj1NJ1dppy2WztWRU2g4Qtq6ulU0xz40r8mnqFDqCOCR2lDTnqKNOBznF/pNNcPbXFRXHZYVNWr3zu0OUQk5cdpvrSMsZ6Vjb1XnHS0t1zJvBKKyNM/SQlwWwGTU7aey02PS2hqr003A1KbaWPtTgu+jFxb2/zyrVpmodLVLZV4qSHcDnv3zfHL8ZE4YfLk8qbEXEdj0iYjerDYY9I7HpAiB6JiH3RfXvhiAN3QknwhH4CtJhCEblIZE0lIkTQRkiInXs44q0hgHW+jSy+e6cxHdOiyOKlEj/AIyf3hememxuVqomq3P0lT+mNoWm1S6OLk9UV+kV206d3d5y4tKKEJr34XxSzS15aURR9mYTKxFxl7U9xQdSXR/o27FJm1Mre/AE1OxS4prnByvZ0yjvKZ1U0zxM2lV9lZobZAiIMbgvak3zdnJ4U3SC3qVMim2geJvalJ/oV2alN7a7qUKehVqI1Rqmpu8ibx6VFwrB1LGR/NSDwhPsldUctnQyxlUtjYXdN2d7ktTPZRvZ9fOXYC6TgDJ7UkRBzb+WNqqMZAhZb5HTJdIUT5xYPVXUnzjSy/ETu6Vspta7g8DU6Sr/ADD9DJNpWT1ntURAxFxq3+Hdzlf01Y07a0tNQ1PW1P8AWVR+rR4+o04Z+bDY9YAd0Uj3QxNXeTEMRT8YkAIYhiBgoYMIY9IQSroRSsTEpzWEMiaSkGRsIIyRkSa1YCpSPlWT+8hMchwQw5htUKyeqbHQNh23+zLa8uUpoWABIXhlJsSqCqMviRWlB0x2vXFVLZNYRU1t9aYzHd1GWWck3V/s2vTetTq1XTXVVtC61+6a1ntgmp6gUHxM2lZ4iK9zmm6M6VFbrdScLS3q7a2y4WloqsoRtVRE4l9fSX8NInLv+L0up1OnVRrUyWbtK+rTHWO0H1GhVKFx2WXs1F8553bbQvylRXp13amq6tWrUuMfpHHbtQVKdRUdHpsutGbtL5RfD9K+5+3rBCEahgGcdQqCRjeWnPs27FSmjg7nTUskqNvMmw7ltDS1dYhTHabTq90xPTa66y6NNX1Lb0VpaR2ab8zLnpTcvToHq3dKlSsio6NpZe/8phCxOWYlmLamZuJmaGOPt2fTYb/IRcxMekCO6aOwhzCLnuh8IAm/ui6fOKBDEAbiEdFgFb6Q+McYw90bmpjZjDJDGNGzyRGIBFaIIMLW66OXeaVNwd9P6Covu5S32raWlVadSrSRqg7LN2lWYHYl81KoEILU6zKjoF1aW7iBNt14KowIZdPCytw6ZGWNnmMMpJXA1k4b6NiaZZdOpFZl9N4lvb29QBQKjsD7SLEt0zvJ3GWVCzHMu4w3DxSPNa45zGf8mU9n1ieF8A+SKv4yDaHRi1dWqPUqdZ4mVpe0qWkYVix8OpoVWXBDHfph1dpyy+UQbKoU6dKjTptlUTSrN2p0u24k85y0yBwht2rVFeoDuEES+mR6Y3Dl6VEA6EVqrN7TH/xM0DNotot1f32z3YdXU2ciUW/4dwBqB/H8TMpfWdejUqW1zTKVKTaXU/3HpNJjrGV3/S8mNnw9xAPfFjffFzB1AxMRSOcQN584KOHcIhEDFjA3whCAVrNGx1Om7stOmlR6jNpWlTRmZvgJpdl9CdpVcVLkpa0z4an0lX7hy+JlTG1w58mGPeTLH0j6NtXchLelUqOfDTRmnqFh0J2VTwaiVLip7Vd+H7humhttnUkASlRp06Y7KU0VVlTD9uPP6ufxjyix6F7VqYLpToIe01V9TfcJe0OgdsgBuK1Wq/sp9HT/AF/GeiCgB3CQ1gMagNw4VWXMY5sufOse+wLWlRuTb21NanzWqqVFXUytpPeZkdkbSNPFtcEimW+jqFv9v0909WekNJXGSZ5TtKyFOtcWxGBTrMqfZ7vyiuMs0mZ3e2noXQXAO9T7MsBtGnwYJ+srK0xWz716RFOoDUoew3ap+78N3rNVZJbOorUKhame1obip+hHdOfPG4ujHKZLeltFOyutifEqNEuLpm4caR4stxNGUbSmQCKlQj2VqSdLNAdw+9plbVyIFLbvWR7Svkt01thqlTho0dXab9Iu1NoW1suTh6z8NOiv9z5CY24uatV2q12LO3h8NNfIfvvM0wwuV3ek5ZTHrtoehDO9+lR2LPUarVdm9QZtukPRmyvBTqVlqLVpqyJcUm0tp8j5iZb5ObYtc1apGVo2rcX1mO7+xnpTIOQP9M6tTWnL88scvljfLyLanQnaVLVUtit1THhT6Oqvwmar29Wmxp1qdRKg7SVEam34z350AwcE57U5rrZ1tUGivQpVFPhq01aRcJ6dnH/kMsfGc28FxBgN09X2h0E2ZUy9FKlBz4qD6l+4/wCJk9p9CNo08vbNTuUHhX6Or9x3H74rhY7uP6ziy8b1WVhJq1vVpsadanURx2kqI1NvxkZEjTqmUs3CZEIaRCCnqWx9h2duAltQRGPbqNxVKnxMuFojliTJTG7yEmCDG/eZ0vlssrld1AKQ3YjwmN0cR5RjsRuUZY9mIzX3nQOXinPcKMqo5DwrOtFCrlhvPEzTmfedwOYFUWjJxPPOnFqKd0Ki8q1FX/L9J6Uq4we4zGfKTRwtjckYQNVpOy+oBx+EZTthsDfnl/y/v8pNa3D03FSk5VvGnhf0nDa3av1lHqqi1S/0LrUVVZe/ORznbZbKuKru2urQo0+Fusqdcyt6Yxnuis34azLXlu9j3VtUTrEqOoK8dJ//AG2nNtjb9GnmlajXV+1w0/fMcLLaCVDb03w+nhrI/g+/8oXlpc0iC6O9NuzUpauJvL3zCcWMy81reS3HxD61Z3ZqlVy9Ru0zfvlHUVJI/f7/AMyNUYaQ4Ksy8K1F06v3+k7bam7tTooM1KtRKKL4tROB/ebya8Rla9K+T2y6u1e5dMPeVmqK2nwDcPzPxmu3bt26c9japTpUbamNKUaKUkX3CdAgg11XBHfGrgjlJHBwf+mRpnO87jBJrId5H9LRhpg8wN86sD0/ljSF5QGlTf7KtKqlLihTqJ7NRNWn3eUxu2OgacVTZ1Uq3/xq7al+B5iejlB8DImp89wMLJW3Hz8nHdzJ4dW2BtVWam1hXJRsFlorVB+PfCe2dUPIfzQkfbjq/wBhyfpAF5QOOX1YAxwB37t80ecjweZER0ByQcEdltMcxiFsAkjfA0TvkBSMEdpYiJ3nvkipnjYYGnhjgIBEy7j5TM/KFRD7O14ybe9oVP4SdP5zVle6U3Suhr2dtJBzS1asv2l4vygJ28Rem44k3VKb6kb62+dXR93NR6lS5KsVZmRX0tVb3eka+NXvVW/AzguKah1dSV1aez7W6L+1tPsrZ1vUugg2i4fVrVgv0rP7IbkTLfb+zb9KlNqNWrVp1G1U6YZVakw8xy+Mqei1lZVKgWpXcGnpenTH0fWN9qG3lq07qtXp3epaWl9VSt1lWnnwef8AiKz9diVW9ILis7LbVEVWpKrtUpt2Xx3TRfJpQq1r6mlca1sabXbVva8IB9cnPwmUQO5avVbJfib8P1nqPyQ2JFC82iy4N5c9RTb/AOpR+pP3R+vIy/p6MuMY/lgy+LH2oq98dugSMkHljs+KMVRvxgEcWqPIxjJ+zDRuHPHswBVPI98CO+OGPKGBAEKnzjSvf/8AmSY9IeYgWkPVjyhJdIiw2WlQp3R2d0ah3D1jifMfWlEjbn6xETUTq5K3Zjjz3CCHDA4wG4YgkbkAd+PDGlTuj2HkYYgZhE5r2gKlK6oHlVtatLT71InUe/ESmBnJ5GFE7fPbk4pk89OlvxEg1nUrIoJ8LFezylhtu36upe0OXza/r0l+yGfH4YkGxrtEem9SkrolZarK69pRu3Q9KqzuabUqdtUa2ejVZFqrVXh5Hy8/1lXUpYZ3Y1S9Vusdavqcj37jNntva1keqoNQ65VdK1ZnXT1a893riZ7bd7RqVKwpgAU+qVG7PWfvMV8HFdcsVQIgOptKqq+Jt0986J7NFtY2NmFw9O2Vqn2zvP4meL9GrE3O0dm2pXVTSstxW+wu/wDKfQCAgAYhU0/17ogHf3ntR0PQffAyHyzDO7fzHaikffGk94+zAFX3nMU95zEEdEAD6RI7HfG57oBC1XBIwdxhGlM5O/efahGlWoeyN0k8s85z277lzzC6Z0FhyxLSTG/1iupI5D2u1BSOcf37/wDliMI2QpHevf4Y5Rn39loxMAlRnfxLJcd/80Rwwrz841Bv9JKV8ozTvxv3wJ4r0+orTv8AayEYWpUpXCL9pB+eZDsV9mddY06lMFVprxt/tq5wVB8/8y++U20t/wDUbNrhnWneWCJqTxOr43/BpXWdjs9rzRqBdKKs1oq8Osf4xuh1Nq78LXbFTZT3VslQaqlNtFZ0/wBvV4Q3nvmZ6Q/NvnFx1ZGsU16zT2df7xLfadhaC4YJUTejVqlsO0r+Xx54lP8AMrYvd1HcMQn+1q4lz3yZN35Lt1jprPkisusr321CvBTRbS3b6x3n8Av3z1v0mR+TjZLW2zrWm4xUrK13UZl4tTHI/o0zWgjzjqIB5RYe+Ax3QMhz/wBUBvOe4dmBPcP4ou6AII7HrEAimIFkbnm3kscZE53EeelYQqeuAAM8hCJ98IyZ+g+GemTybUs6c+Up72pUSolRAeFuJfaWWlKopCsDuK6laWl0Ke7EkUc5Ep90lQ+YiAdGxleY7MehBGR3xc9xEjRsErzU8SxGmjGHeNwjgR3741vXv7UDrD/KXs2nWGyaz8K07qrbuy9plK6sf0TBU7M07p3p1CArLWXS/wBIrHunqPT+gzbPqVEYh7O8t7tWHh4tJ/BjPLtk2F3Uq1quvT2l651/3HPKKS736Pc+K22TsapUq1HqVD1dJ1eo6v8ASVGPdOOh0frvfpZmoTSq3Kozo3FUpHefwBlh0btNpddWZOAU1ZLl66sys+Nw9T3+6Wnyd7Nun2htG+vA+u0T5vxdlqrHmPcg/qlF6eoW6KqqgGlQulVHhWPCjOYY5QUHmeUmqOx3Z+1EO7fzHhWO+MaoOckfZgDgv/dF3wwIRAYiE+6OzGH98UACe/O7TItWSo9dUfUbA575DSYZf0WOFU279rCGIQLbK3qg5yOcLBzp6ttxTs/ZhCXEXtZ03x5GdCeYhCKqh65/pi6cjdz8MIQBU5ZHMdqKywhAK7b9satntC3Ay9Syqqmr2wMj8RPHNgVb5fnb06TutOmzsreGr6fp6QhCdj0udgbXvgLx3pvXTQ1xq7Omrjl/j0nonQ2zq07WnXud9zes17X4dOlm5D4DAhCTar00C+Zjx5whAzCy8scPh+tHah5whAF1L5iLkeYhCIGsw5EiQu4HmYQjhVz3Nwih3YlUVfFFsnbSGcYapxsvswhHCrp1esIQgT//2Q==" alt="member img" width="370" height="380">
+                                    </div><!-- /.member-img -->
+                                    <div class="member__info">
+                                        <h5 class="member__name"><a href="#">Prof. P.S. Panesar,</a></h5>
+                                        <p class="member__job">Dean (P & D)</p>
+
+
+                                    </div><!-- /.member-info -->
+                                </div><!-- /.member -->
+                            </div><!-- /.col-lg-4 -->
+                            <!-- Member #4 -->
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="member">
+                                    <div class="member__img">
+                                        <img src="http://sliet.ac.in/wp-content/uploads/2020/09/Photo_ASD1.jpg" alt="member img" width="370" height="380">
+                                    </div><!-- /.member-img -->
+                                    <div class="member__info">
+                                        <h5 class="member__name"><a href="#">Prof. A.S. Dhaliwal,</a></h5>
+                                        <p class="member__job">Dean (R & C)</p>
+
+
+                                    </div><!-- /.member-info -->
+                                </div><!-- /.member -->
+                            </div><!-- /.col-lg-4 -->
+                            <!-- Member #5 -->
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="member">
+                                    <div class="member__img">
+                                        <img src="http://sliet.ac.in/wp-content/uploads/avatars/269/60a4dfb463ac5-bpfull.jpg" alt="member img" width="370" height="380">
+                                    </div><!-- /.member-img -->
+                                    <div class="member__info">
+                                        <h5 class="member__name"><a href="#">Prof. A.S. Shahi,</a></h5>
+                                        <p class="member__job">HOD (ME)</p>
+
+
+                                    </div><!-- /.member-info -->
+                                </div><!-- /.member -->
+                            </div><!-- /.col-lg-4 -->
+                            <!-- Member #6 -->
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="member">
+                                    <div class="member__img">
+                                        <img src="data:image/jpeg;base64,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" alt="member img" width="370" height="380">
+                                    </div><!-- /.member-img -->
+                                    <div class="member__info">
+                                        <h5 class="member__name"><a href="#">Prof. Surita maini,</a></h5>
+                                        <p class="member__job">HOD (EIE) </p>
+
+
+                                    </div><!-- /.member-info -->
+                                </div><!-- /.member -->
+                            </div><!-- /.col-lg-4 -->
+                            <!-- Member #7 -->
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="member">
+                                    <div class="member__img">
+                                        <img src="http://sliet.ac.in/wp-content/uploads/avatars/7/640f6233b38c8-bpfull.jpg" alt="member img" width="370" height="380">
+                                    </div><!-- /.member-img -->
+                                    <div class="member__info">
+                                        <h5 class="member__name"><a href="#">Prof. Surinder Singh,</a></h5>
+                                        <p class="member__job">HOD (ECE)</p>
+
+
+                                    </div><!-- /.member-info -->
+                                </div><!-- /.member -->
+                            </div><!-- /.col-lg-4 -->
+                            <!-- Member #8 -->
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="member">
+                                    <div class="member__img">
+                                        <img src="http://sliet.ac.in/wp-content/uploads/avatars/5/6fc17d6735998f4f22a0e91fbf43b75c-bpfull.jpg" alt="member img" width="370" height="380">
+                                    </div><!-- /.member-img -->
+                                    <div class="member__info">
+                                        <h5 class="member__name"><a href="#">Prof. Bir Mohan Singh,</a></h5>
+                                        <p class="member__job">HOD (CSE)</p>
+
+
+                                    </div><!-- /.member-info -->
+                                </div><!-- /.member -->
+                            </div><!-- /.col-lg-4 -->
+                            <!-- Member #9 -->
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="member">
+                                    <div class="member__img">
+                                        <img src="http://sliet.ac.in/wp-content/uploads/avatars/84/5df1ed9fa9cb0-bpfull.jpg" alt="member img" width="370" height="380">
+                                    </div><!-- /.member-img -->
+                                    <div class="member__info">
+                                        <h5 class="member__name"><a href="#">Prof. Vikas Nanda,</a></h5>
+                                        <p class="member__job">HOD (FET)</p>
+
+
+                                    </div><!-- /.member-info -->
+                                </div><!-- /.member -->
+                            </div><!-- /.col-lg-4 -->
+                            <!-- Member #10 -->
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="member">
+                                    <div class="member__img">
+                                        <img src="http://sliet.ac.in/wp-content/uploads/avatars/62/5f197ccf71246-bpfull.jpg" alt="member img" width="370" height="380">
+                                    </div><!-- /.member-img -->
+                                    <div class="member__info">
+                                        <h5 class="member__name"><a href="#">Prof. Pushpa Jha,</a></h5>
+                                        <p class="member__job">HOD (ChE)</p>
+
+
+                                    </div><!-- /.member-info -->
+                                </div><!-- /.member -->
+                            </div><!-- /.col-lg-4 -->
+                            <!-- Member #11 -->
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="member">
+                                    <div class="member__img">
+                                        <img src="http://sliet.ac.in/wp-content/uploads/avatars/144/61c2ce01e0d3b-bpfull.png" alt="member img" width="370" height="380">
+                                    </div><!-- /.member-img -->
+                                    <div class="member__info">
+                                        <h5 class="member__name"><a href="#">Prof. Dheeraj Sud,</a></h5>
+                                        <p class="member__job">HOD (Chemistry)</p>
+
+
+                                    </div><!-- /.member-info -->
+                                </div><!-- /.member -->
+                            </div><!-- /.col-lg-4 -->
+                            <!-- Member #12 -->
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="member">
+                                    <div class="member__img">
+                                        <img src="http://sliet.ac.in/wp-content/uploads/avatars/165/5f54c4900a559-bpfull.jpg" alt="member img" width="370" height="380">
+                                    </div><!-- /.member-img -->
+                                    <div class="member__info">
+                                        <h5 class="member__name"><a href="#">Prof. V.K. Kukreja,</a></h5>
+                                        <p class="member__job">HOD (Math)</p>
+
+
+                                    </div><!-- /.member-info -->
+                                </div><!-- /.member -->
+                            </div><!-- /.col-lg-4 -->
+                            <!-- Member #13 -->
+                            <div class="col-sm-6 col-md-4 col-lg-4 margin_auto">
+                                <div class="member">
+                                    <div class="member__img">
+                                        <img src="http://sliet.ac.in/wp-content/uploads/avatars/172/787fe5190cca65edb67b01abdae497a5-bpfull.jpg" alt="member img" width="370" height="380">
+                                    </div><!-- /.member-img -->
+                                    <div class="member__info">
+                                        <h5 class="member__name"><a href="#">Prof. Jaspreet Kaur,</a></h5>
+                                        <p class="member__job">HOD (H & M)</p>
+
+                                    </div><!-- /.member-info -->
+                                </div><!-- /.member -->
+                            </div><!-- /.col-lg-4 -->
+                        </div> <!-- /.row -->
+
+                    </div><!-- /.container -->
+                </section><!-- /.Team layout 2  -->
+                <!-- ========================
+      Footer
+    ========================== -->
+                <footer class="footer">
+                    <div class="footer-primary">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-3">
+                                    <div class="footer-widget-about">
+                                        <img src="assets/images/head/amrp.png" height="100px" alt="logo" class="mb-30">
+                                        <p class="color-gray" style="text-align:justify;">
+                                            The 6th National Conference on Advanced Materials and Radiation Physics is a platform that brings together experts, scientists and practitioners from across the world to discuss the latest advances in the field of material science and radiation physics.
+                                        </p>
+
+                                    </div><!-- /.footer-widget__content -->
+                                </div><!-- /.col-xl-2 -->
+                                <div class="col-sm-6 col-md-6 col-lg-2 offset-lg-1">
+                                    <div class="footer-widget-nav">
+                                        <h6 class="footer-widget__title">Important Links</h6>
+                                        <nav>
+                                            <ul class="list-unstyled">
+                                                <li><a href="cop.html">Call for Papers</a></li>
+                                                <li><a href="auth.html">Authors Guidelines</a></li>
+                                                <li><a href="registration.html">Registration</a></li>
+                                                <li><a href="publication.html">Publication</a></li>
+                                                <li><a href="comm.html">Committee</a></li>
+                                                <li><a href="aap.html">Accepted Abstract</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div><!-- /.footer-widget__content -->
+                                </div><!-- /.col-lg-2 -->
+                                <div class="col-sm-6 col-md-6 col-lg-2">
+                                    <div class="footer-widget-nav">
+                                        <h6 class="footer-widget__title">Sub Links</h6>
+                                        <nav>
+                                            <ul class="list-unstyled">
+                                                <li><a href="about us.html">About Us</a></li>                                                <li><a href="#">Aim and Scope</a></li>
+                                                <li><a href="#">Submission Procedure</a></li>
+                                                <li><a href="#">Mode of Presentation</a></li>
+                                                <li><a href="#">Best Paper Award</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div><!-- /.footer-widget__content -->
+                                </div><!-- /.col-lg-2 -->
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="footer-widget-contact">
+                                        <h6 class="footer-widget__title color-heading">Quick Contacts</h6>
+                                        <ul class="contact-list list-unstyled">
+                                            <li>If you have any questions or need help, feel free to contact with our team.</li>
+                                            <li>
+                                                <a href="tel:01061245741" class="phone__number">
+                                                    <i class="icon-phone"></i> <span>+91 6239793053</span>
+                                                </a>
+                                            </li>
+                                            <li class="color-body">SLIET Longowal, Punjab, India</li>
+                                        </ul>
+
+                                    </div><!-- /.footer-widget__content -->
+                                </div><!-- /.col-lg-2 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </div><!-- /.footer-primary -->
+                    <div class="footer-secondary">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <span class="fz-14" style="color:#fff;">&copy; 2023 Advanced Material and Radiation Physics, All Rights Reserved.</span>
+                                    <a class="fz-14 color-primary" href="http://sliet.ac.in/">www.sliet.ac.in</a>
+                                </div><!-- /.col-lg-6 -->
+                                <!-- /.col-lg-6 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </div><!-- /.footer-secondary -->
+                </footer><!-- /.Footer -->
+                <button id="scrollTopBtn"><i class="fas fa-long-arrow-alt-up"></i></button>
+            </div><!-- /.wrapper -->
+
+            <script src="assets/js/jquery-3.5.1.min.js"></script>
+            <script src="assets/js/plugins.js"></script>
+            <script src="assets/js/main.js"></script>
+        </body>
+
+    </html>
